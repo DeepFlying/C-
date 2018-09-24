@@ -12,6 +12,7 @@ int *f1(int n)          //分配n个整型内存，返回首地址
 void f2(int *p, int n)      //输出动态内存中的n个数据
 {
     while (n-->0)   cout <<*p++<<' ';
+    cout << endl;
 }
 
 void f3(int *p)
