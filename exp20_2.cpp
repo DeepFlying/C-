@@ -2,14 +2,15 @@
 using namespace std;
 double AVE(double *A,int N) //计算N*N二维数组元素的平均值
 {
-    int i,j,sum=0;
+    double sum=0;
+    int i,j;
     for(i=0;i<N;i++)
-    for(j=0;j<N;j++) sum=sum+*(A+i*N+j);
+        for(j=0;j<N;j++) sum=sum+*(A+i*N+j);
     return sum/(N*N);
 }
 int main()
 {
-    int i,j,n=4; 
+    int i,j,n; 
     cin>>n;
     double *A=new double[n*n]; //分配“数组”A[n][n]
     for (i=0;i<n;i++)
